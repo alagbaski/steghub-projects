@@ -29,6 +29,12 @@ Before starting this project, ensure you have the following:
 
 ## Deployment Steps
 
+### Connect to your server via SSH
+
+```
+ssh -i key-pair.pem username@public-ip
+```
+
 ### Step 1: Install Node.js
 
 - **Update and upgrade 'apt' package manager:**
