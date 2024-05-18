@@ -37,6 +37,12 @@ The `server` is the application that provides services to the client, such as pr
       - **MySQL Client Security Group**
       ![Client SG](./images/client-sg.PNG)
 
+### Connect to both MySQL Servers via SSH
+
+```
+ssh -i key-pair.pem username@public-ip
+```
+
 #### Install MySQL Software
 
 ##### On `mysql server`
