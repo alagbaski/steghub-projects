@@ -137,7 +137,7 @@ You can find additional documentation on how to deploy the previous project `Dev
     ```
     http://<Load-Balancer-Public-IP-or-Public-DNS-Name>/index.php
     ```
-  - Accessing the `Web Servers` using the `LB Server` on the broswer:
+  - Accessing the `Web Servers` using the `LB Server` Public-IP address on the broswer:
    ![WebPage Login](./images/lb-public-ip-accessing-tooling-website-1.PNG)
 
   - Login with `myuser` credentials:
