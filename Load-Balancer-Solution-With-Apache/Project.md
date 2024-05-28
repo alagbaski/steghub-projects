@@ -57,7 +57,8 @@ Ensure the following servers are installed and configured based on the pervious 
 You can find additional documentation on how to deploy the previous project `Devops-Tooling-Website` by clicking this [Link](../DevOps-Tooling-Website-Solution/).
 
 
-## Configure Apache as a Load Balancer
+## Launch & Configure Apache as a Load Balancer
+![Instance List](./images/new-web-server-list.PNG)
 
 ### Create an Ubuntu Server EC2 Instance On AWS
 - SSH into the instance
