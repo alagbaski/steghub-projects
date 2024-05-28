@@ -58,7 +58,6 @@ You can find additional documentation on how to deploy the previous project `Dev
 
 
 ## Launch & Configure Apache as a Load Balancer
-![Instance List](./images/new-web-server-list.PNG)
 
 ### Create an Ubuntu Server EC2 Instance On AWS
 - SSH into the instance
@@ -68,6 +67,8 @@ You can find additional documentation on how to deploy the previous project `Dev
     ```
 
 - Create an EC2 instance and name it `Project-8-apache-lb`.
+  ![Instance List](./images/new-web-server-list.PNG)
+  
 - Open TCP port 80 on the `Project-8-apache-lb` server.
   ![LB SG](./images/LB-sg.PNG)
 
