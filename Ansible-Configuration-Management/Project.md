@@ -115,28 +115,27 @@ This document provides a step-by-step guide to setting up and using Ansible for 
 - **Edit `playbooks/common.yml` to include the following tasks:**
     ```yml
     ---
-    -	name: update web and nfs servers
-	    hosts: webservers, nfs
-	    become: yes
-	    tasks:
-		    - name: ensure wireshark is at the latest version
-			    yum:
-				    name: wireshark
-				    state: latest
+    -  name: update web and nfs servers
+       hosts: webservers, nfs
+       become: yes
+       tasks:
+	  - name: ensure wireshark is at the latest version
+	    yum:
+	      name: wireshark
+	      state: latest
 
+    -  name: update LB and db servers
+       hosts: lb, db
+       become: yes
+       tasks:
+	  - name: Update apt repo
+	    apt:
+	      update_cache: yes
 
-    -	name: update LB and db servers
-	    hosts: lb, db
-	    become: yes
-	    tasks:
-		    - name: Update apt repo
-			    apt:
-				    update_cache: yes
-
-		    - name: ensure wireshark is at the latest version
-			    apt:
-				    name: wireshark
-				    state: latest
+	  - name: ensure wireshark is at the latest version
+	    apt:
+	      name: wireshark
+	      state: latest
     ```
 Feel free to add additional tasks such as `creating a directory`, `changing the timezone`, or `running shell scripts`.
 
