@@ -269,7 +269,7 @@ As a member of the DevOps team, you will implement a tooling website solution th
       ```
       ```sh
       cd tooling
-      mysql -h <database-private-ip> -u <db-username> -p <db-name> tooling < tooling-db.sql
+      mysql -h <database-private-ip> -u <db-username> -p <db-name> < tooling-db.sql
       ```
    - Database Security Group:
     ![DB SG](./images/DB-sg.PNG)
@@ -305,6 +305,17 @@ As a member of the DevOps team, you will implement a tooling website solution th
      sudo systemctl restart httpd
      ```
      ![Restartin Apache](./images/setsebool-httpd-nfs.PNG)
+
+  - To disbale selinux and make the change permanent, open selinux file and set selinux to disable.
+     ```sh
+     sudo setenforce 0
+     
+     sudo vi /etc/sysconfig/selinux
+
+     SELINUX=disabled
+
+     sudo systemctl restart httpd
+     ```
 
 - **Access the Website**:
    - Open a browser and navigate to `http://<web-server-public-ip>/index.php`.
