@@ -48,7 +48,7 @@ This document provides a step-by-step guide to setting up and using Ansible for 
     ![Test](./images/Capture.PNG)
 
 ## Step 2: Prepare Your Development Environment Using Visual Studio Code
-- Install Visual Studio Code (VSC) On the Local Machine. To do so click this ![link](https://code.visualstudio.com/learn/get-started/basics).
+- Install Visual Studio Code (VSC) On the Local Machine. To do so click this ![link](https://code.visualstudio.com/learn/get-started/basics)
 
 - Configure VSC to connect to your GitHub repository.
     ```sh
@@ -64,23 +64,49 @@ This document provides a step-by-step guide to setting up and using Ansible for 
 
 ## Step 3: Begin Ansible Development
 - **Create a new branch in your GitHub repository for development.**
+  
+  ```sh
+  #Check existing branches
+  git branch
+
+  #Create new branch
+  git branch <branch-name>
+  ```
 
   - Checkout the new branch on your local machine.
+    
+    ```sh
+    git checkout <new-branch>
+
+    git branch  ---> #To confirm you switched branch
+    ```
    ![Create Branch](./images/create-checkout-new-git-branch.PNG)
 
 - **Create a directory structure:**
 
     - `playbooks` directory to store playbooks.
     - `inventory` directory to organize hosts.
+      
+      ```sh
+      mkdir playbooks inventory
+      ```
 
 - **Create your first playbook:**
 
     - `playbooks/common.yml`
-
+      
+      ```sh
+      cd playbooks && touch common.yml
+      ```
 
 - **Create inventory files for each environment:**
 
     - `inventory/dev`, `inventory/staging`, `inventory/uat`, and `inventory/prod`.
+      
+      ```sh
+      cd inventory && touch dev.yml staging.yml uat.yml prod.yml
+      ```
+      
   ![Directories, Inventory and Playbook Files](./images/create-playbook-inventory-file.PNG) 
 
 - **Create the `ansible.cfg` file:**
