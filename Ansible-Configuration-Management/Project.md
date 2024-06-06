@@ -1,6 +1,6 @@
 # Ansible Configuration Management Project
 
-This document provides a step-by-step guide to setting up and using Ansible for configuration management on an EC2 instance, including installing and configuring Ansible, creating playbooks, and automating server configuration tasks.
+This document is a continuation of the `Tooling Website Solution Project`, it provides a step-by-step guide to setting up and using Ansible for configuration management on an EC2 instance, including `installing and configuring Ansible`, `creating playbooks`, and `automating server configuration tasks`.
 
 ## Step 1: Install and Configure Ansible on EC2 Instance
 
@@ -38,9 +38,10 @@ This document provides a step-by-step guide to setting up and using Ansible for 
  ![Post Build](./images/create-post-build-action.PNG)
 
 - **Test the setup:**
-- Make changes to the `README.md` file in the `main` branch.
+  - Make changes to the `README.md` file in the `main` branch.
+  ![Update README](./images/first-update-readme-file.PNG)
 
-- Ensure builds start automatically and Jenkins saves the files in:
+  - Ensure builds start automatically and Jenkins saves the files in:
   ![Console Output](./images/testing-ansible-config-mgt-repo-webhook.PNG)
     ```sh
     ls /var/lib/jenkins/jobs/ansible/builds/1/archive/
@@ -48,7 +49,7 @@ This document provides a step-by-step guide to setting up and using Ansible for 
     ![Test](./images/Capture.PNG)
 
 ## Step 2: Prepare Your Development Environment Using Visual Studio Code
-- Install Visual Studio Code (VSC) On the Local Machine. To do so click this ![link](https://code.visualstudio.com/learn/get-started/basics)
+- Install Visual Studio Code (VSC) On the Local Machine. To do so click this [link](https://code.visualstudio.com/learn/get-started/basics).
 
 - Configure VSC to connect to your GitHub repository.
     ```sh
@@ -106,7 +107,7 @@ This document provides a step-by-step guide to setting up and using Ansible for 
       ```sh
       cd inventory && touch dev.yml staging.yml uat.yml prod.yml
       ```
-      
+
   ![Directories, Inventory and Playbook Files](./images/create-playbook-inventory-file.PNG) 
 
 - **Create the `ansible.cfg` file:**
