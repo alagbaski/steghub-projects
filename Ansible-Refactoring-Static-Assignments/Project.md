@@ -105,12 +105,12 @@ In this project, you will continue working with the `ansible-config-mgt` reposit
     ├── static-assignments
 	│   └── common.yml
 	├── inventory
-    	└── dev
-    	└── stage
-    	└── uat
-    	└── prod
+    		└── dev
+    		└── stage
+    		└── uat
+    		└── prod
 	└── playbooks
-    	└── site.yml
+    		└── site.yml
 ```
 ![Folder Structure](./images/folder-structure-01.PNG)
 
