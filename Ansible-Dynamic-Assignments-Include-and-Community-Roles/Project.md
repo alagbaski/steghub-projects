@@ -701,6 +701,11 @@ This is a continuation of the pervious projects for `Tooling Website Solution`, 
         ssh-add <path-to-private-key>
         ssh -A ubuntu@server-pubic-ip
 
+        #Pull changes for the Github repo to the server
+        cd ansible-config-mgt/
+
+        git pull origin main
+
         #Run the playbook tasks
         ansible-playbook -i inventory/uat playbooks/site.yml
         ```
