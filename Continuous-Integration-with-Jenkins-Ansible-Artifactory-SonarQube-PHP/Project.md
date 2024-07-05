@@ -46,13 +46,13 @@ This project is partly a continuation of your Ansible work, so simply add and su
   - Inventory Structure:
 
     ```
-    ├── ci
-    ├── dev
-    ├── pentest
-    ├── pre-prod
-    ├── prod
-    ├── sit
-    └── uat
+    ├── ci.yml
+    ├── dev.yml
+    ├── pentest.yml
+    ├── pre-prod.yml
+    ├── prod.yml
+    ├── sit.yml
+    └── uat.yml
     ```
 
     - Create Ansible inventory files (`ci`, `dev`, `pentest`, etc.) with respective server users and IP addresses.
