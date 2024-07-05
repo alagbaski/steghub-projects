@@ -1320,6 +1320,11 @@ SonarQube is a tool that can be used to create `quality gates` for software proj
 
   `http://<Jenkins-Public_IP>:8080/sonarqube-webhook/`
 
+   Output 1:
+    ![Webhook](./images/create-sonarqube-jenkins-webhook-01.PNG)
+
+
+   Output 2:
     ![Webhook](./images/create-sonarqube-jenkins-webhook-02.PNG)
 
 ### Update Jenkins Pipeline to include SonarQube scanning and Quality Gate
@@ -1412,9 +1417,11 @@ Assuming a basic `gitflow` implementation restricts only the `develop` branch to
 
 - To test, create different branches and push to GitHub. You will realise that only branches other than `develop`, `hotfix`, `release` or `main` will be able to deploy the code.
   
+  ![Pipeline](./images/checking-status-of-sonarqube-task-analysis-quality-gate.PNG)
+  
   - If everything goes well, you should be able to see something like this:
     
-    ![Pipeline](./images/checking-status-of-sonarqube-task-analysis-quality-gate.PNG)
+    ![Final](./images/sonarqube-webhook-final-validation.PNG)
 
 ### Complete the following tasks to finish the Project
 
