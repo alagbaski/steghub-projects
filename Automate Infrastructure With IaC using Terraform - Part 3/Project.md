@@ -112,6 +112,7 @@ terraform {
 Now its time to re-initialize the backend. Run `terraform init` and confirm you are happy to change the backend by typing `yes`.
 
 **Output:**
+
 ![Init](./images/terraform-init.PNG)
 
 ### - Verify the changes
