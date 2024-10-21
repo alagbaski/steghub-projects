@@ -426,9 +426,11 @@ Complete the rest of the codes yourself, so, the resulted configuration structur
 **Run `terraform state list`**
 
 **Output 1:**
+
 ![state-list](./images/terraform-state-list-01.PNG)
 
 **Output 2:**
+
 ![state-list](./images/terraform-state-list-02.PNG)
 
 > Note: In other to make terraform to stop tracking resources from the `tfstate` file, run `terraform state rm <terraform-resource-name>`. E.g __`terraform state rm aws_s3_bucket.terraform_state`__. This was done because, when we run `terraform destroy` it won't destroy our `S3` and `DynamoDB` containing our `.terraform.tfstate` and `.terraform.lock.hcl` in the resources respectively.
